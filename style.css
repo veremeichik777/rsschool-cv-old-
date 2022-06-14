@@ -1,1 +1,58 @@
+@font-face {
+    font-family: 'RobotoFlex';
+    src: url("assets/fonts/Roboto_Flex/RobotoFlex-VariableFont_GRAD\,XTRA\,YOPQ\,YTAS\,YTDE\,YTFI\,YTLC\,YTUC\,opsz\,slnt\,wdth\,wght.ttf");
+    font-weight: 100;
+  }
+  @font-face {
+    font-family: 'RobotoFlex';
+    src: url("assets/fonts/RobotoRegular.ttf");
+    font-weight: 300;
+  }
 
+  body { font-family: 'RobotoFlex';
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  header, main, footer {border: 1px solid red;}
+
+  
+
+  .container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .nav-list {display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    
+}
+
+.nav-link {
+    padding: 0 20px;
+    line-height: 50px;
+    text-decoration: none;
+    transition: .3s; 
+    
+  }
+
+  html {
+    scroll-behavior: smooth; 
+  }
+
+  
+  .nav-list a {
+    color: #829985;
+    text-decoration: none;  
+    transition: color 0.5s;
+  }
+  .nav-list a:hover {
+    color: #4d2323;
+  }
