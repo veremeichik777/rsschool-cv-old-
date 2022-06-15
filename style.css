@@ -6,33 +6,53 @@
   @font-face {
     font-family: 'RobotoFlex';
     src: url("assets/fonts/RobotoRegular.ttf");
-    font-weight: 300;
+    font-weight: 400;
   }
 
-  body { font-family: 'RobotoFlex';
-         display: flex;
-         flex-direction: column;
-         justify-content: space-between;
-  }
-
+  
   * {
     box-sizing: border-box;
   }
 
+  body { font-family: 'RobotoFlex', sans-serif;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;     
+         font-size: 18px;
+         font-weight: 400;
+         line-height: 1.5;
+         color: #4d2323;
+        
+  }
+
   header, main, footer {border: 1px solid red;}
 
-  
+  /*------------ Header-----------*/
 
-  .container {
+.container {
+  margin:  auto;
+  max-width: 1300px;
+  box-shadow: 0 0 20px black;
+}
+
+.header-container {
+  height: 60px;
+  margin: 15px auto;
+  background-color: rgba(0, 0, 0, 0);
+  box-shadow: 0 0 20px black;
+}
+
+  /* .container {
     max-width: 1440px;
     margin: 0 auto;
-  }
+  } */
 
   .nav-list {display: flex;
     justify-content: flex-end;
     align-items: center;
     list-style: none;
-    
+    flex-wrap: wrap;
+    margin: 16px 0;
 }
 
 .nav-link {
@@ -54,5 +74,53 @@
     transition: color 0.5s;
   }
   .nav-list a:hover {
-    color: #4d2323;
+    color: #350404;
   }
+
+  .main-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .section {
+    width: 50%;
+  }
+
+  @media (max-width: 768px) {
+    .section {
+      width: 100%;
+    }
+  }
+  .foto {
+    width: 400px;
+    height: 600px;
+    box-shadow: inset 0px 0 30px rgb(103 87 85);}
+ 
+/*----------------Footer-------------*/
+
+.footer-container {
+  margin: 16px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgba(29, 23, 23, 0.801);
+}
+
+.footer-list {
+  color: rgba(32, 27, 27, 0.801);
+  padding: 0 10px;
+  text-decoration: none;
+}
+
+.fa {
+  padding: 10px;
+  color: rgb(15, 46, 13);
+}
+
+.rss {
+  background: url(assets/svg/logo_rs_text.svg) no-repeat;
+  background-size: contain;
+  height: 50px;
+  width: 90px;
+  margin-right: 20px;
+}
